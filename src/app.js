@@ -4,6 +4,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
+  if (res.error) {
+    console.log({ error })
+  }
   res.send('Hello World!')
 });
 

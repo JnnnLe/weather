@@ -1,7 +1,7 @@
 // Express server
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -10,3 +10,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}`)
 });
+
+
+// after running: heroku create -a jle-weather 
+// https://jle-weather-831cf1366665.herokuapp.com/ | https://git.heroku.com/jle-weather.git

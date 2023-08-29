@@ -11,6 +11,5 @@ app.listen(port, () => {
   console.log(`Express server listening on port ${port}`)
 });
 
-
 // after running: heroku create -a jle-weather 
 // https://jle-weather-831cf1366665.herokuapp.com/ | https://git.heroku.com/jle-weather.git

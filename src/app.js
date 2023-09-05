@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   if (res.error) {
     console.log({ error })
   }
-  res.send('Hello World!')
+  res.send('Listening, now deploy to Heroku')
 });
 
 app.listen(port, () => {
